@@ -9,3 +9,8 @@
     rgba(72, 119, 60, 1) 100%
   );
 }
+
+.splash-img {
+  width: 150px;
+  height: 150px;
+}
