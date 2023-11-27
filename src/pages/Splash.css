@@ -1,0 +1,11 @@
+.splash {
+  text-align: center;
+  height: 100vh;
+  width: 100%;
+  background: rgb(72, 119, 60);
+  background: linear-gradient(
+    0deg,
+    rgba(255, 255, 255, 1) 50%,
+    rgba(72, 119, 60, 1) 100%
+  );
+}
