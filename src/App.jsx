@@ -1,4 +1,5 @@
 import "./App.css";
+import Navbar from "./components/navBar/Navbar";
 import Form from "./pages/Form/Form";
 import Splash from "./pages/Splash/Splash";
 
@@ -11,12 +12,13 @@ function App() {
 
   return (
     <div>
-    <div className="d-none">
-      
-    <Splash />
+      <Navbar />
+    <div className="pt-3">
+          <Form  />
     </div>
-      
-      <Form />
+      <div className="d-none">
+        <Splash />
+      </div>
     </div>
   );
 }
