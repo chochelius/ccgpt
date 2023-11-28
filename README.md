@@ -1,8 +1,19 @@
-# React + Vite
+# ClimateCoachGPT
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+<!-- https://github.com/chochelius/ccgpt -->
 
-Currently, two official plugins are available:
+## 0.1.0
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- Initial release
+
+<!-- instructions to deploy -->
+
+# Install
+
+git clone https://github.com/chochelius/ccgpt.git
+cd ccgpt
+npm install
+npm run dev
+
+# Este proyecto nace de la hackathon realizada el 25 de noviembre de 2023
+

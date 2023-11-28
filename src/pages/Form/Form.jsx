@@ -60,6 +60,8 @@ const Form = () => {
             )}
           </form> 
         </div>
+        {/* select but instead of dropdown it's a row of buttons */}
+                
         <div className="col-12 col-lg-5 pt-5">
           <h2 className="text-center">Datos</h2>
           <ul className="list-group">
