@@ -1,5 +1,6 @@
 import "./App.css";
-import Splash from "./pages/Splash";
+import Form from "./pages/Form/Form";
+import Splash from "./pages/Splash/Splash";
 
 function App() {
   const test = () => {
@@ -10,7 +11,12 @@ function App() {
 
   return (
     <div>
-      <Splash />
+    <div className="d-none">
+      
+    <Splash />
+    </div>
+      
+      <Form />
     </div>
   );
 }
