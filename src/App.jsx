@@ -2,6 +2,7 @@ import "./App.css";
 import Navbar from "./components/navBar/Navbar";
 import Form from "./pages/Form/Form";
 import Splash from "./pages/Splash/Splash";
+import Chat from "./pages/Chat/Chat";
 
 function App() {
   const test = () => {
@@ -12,11 +13,12 @@ function App() {
 
   return (
     <div>
+      <div className="mt-3">
       <Navbar />
-    <div className="pt-3">
-          <Form  />
-    </div>
+        <Chat />
+      </div>
       <div className="d-none">
+        <Form />
         <Splash />
       </div>
     </div>
