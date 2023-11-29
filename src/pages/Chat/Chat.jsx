@@ -3,17 +3,18 @@ import "./Chat.css";
 const Chat = () => {
   return (
     <div>
-      <div className="row">
-        <div className="col-10">
-          <div className="pt-3">
-            <div className="card">
+      <div className="pt-3">
+        <div className="col align-self-center">
+          <div className="mt-1">
+            <div className="card text-success">
             <textarea
-                  className="form-control"
+                  className="form-control text-success"
                   placeholder="Leave a comment here"
                   id="floatingTextarea2"
                   style={
                     {
                       height: "200px",
+                      color: "success",
                     }
                   }
                 ></textarea>
@@ -21,7 +22,7 @@ const Chat = () => {
               <div className="card-body">
               <div className="form-floating">
                 <textarea
-                  className="form-control"
+                  className="form-control text-success"
                   placeholder="Leave a comment here"
                   id="floatingTextarea2"
                   style={
