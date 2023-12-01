@@ -33,30 +33,30 @@ const Form = ({ onSubmit }) => {
   const [pais, setPais] = useState("");
   const [vivienda, setVivienda] = useState("");
 
- const handleNombre = (e) => {
+  const handleNombre = (e) => {
     setNombre(e.target.value);
-  }
+  };
 
   const handleEdad = (e) => {
     setEdad(e.target.value);
-  }
+  };
 
   const handleEmail = (e) => {
     setEmail(e.target.value);
-  }
+  };
 
   const handleGenero = (e) => {
     setGenero(e.target.value);
-  }
+  };
 
   const handlePais = (e) => {
     setPais(e.target.value);
-  }
+  };
 
   const handleVivienda = (e) => {
     setVivienda(e.target.value);
-  }
-  
+  };
+
   const handleSubmit = (e) => {
     e.preventDefault();
     onSubmit({
@@ -69,14 +69,14 @@ const Form = ({ onSubmit }) => {
     });
   };
 
-
-
   return (
     <form onSubmit={handleSubmit} className="my-5 py-5 overflow-scroll">
       <h1 className="text-center">Encuesta</h1>
       <h2 className="text-center">Datos personales</h2>
       <div className="form-group">
-        <label htmlFor="nombre">Nombre</label>
+        <label htmlFor="nombre" className="py-2">
+          Nombre
+        </label>
 
         <input
           type="text"
@@ -84,15 +84,21 @@ const Form = ({ onSubmit }) => {
           id="nombre"
           placeholder="Ingrese su nombre"
           value={nombre}
+          style={{ height: "50px" }}
           onChange={handleNombre}
         />
       </div>
 
       <div className="form-group">
-        <label htmlFor="edad">Edad</label>
+        <label htmlFor="edad" className="py-2">
+          Edad
+        </label>
 
-        <div className="container-fluid form-control justify-content-center " id="edad">
-          <div className=" d-flex ">
+        <div
+          className="container-fluid form-control justify-content-center "
+          id="edad"
+        >
+          <div className=" d-flex my-2">
             <div className="col-3">
               <button
                 type="button"
@@ -138,20 +144,25 @@ const Form = ({ onSubmit }) => {
       </div>
 
       <div className="form-group">
-        <label htmlFor="email">Email</label>
+        <label htmlFor="email" className="py-2">
+          Email
+        </label>
 
         <input
           type="email"
           className="form-control"
           id="email"
           placeholder="Ingrese su email"
+          style={{ height: "50px" }}
           value={email}
           onChange={handleEmail}
         />
       </div>
 
       <div className="form-group">
-        <label htmlFor="genero">Genero</label>
+        <label htmlFor="genero" className="py-2">
+          Genero
+        </label>
         {/* 
         <select
           className="form-control"
@@ -219,8 +230,10 @@ const Form = ({ onSubmit }) => {
           onChange={handlePais}
         />
       </div>
-      <div className="form-group 
-      ">
+      <div
+        className="form-group 
+      "
+      >
         <label htmlFor="vivienda">Vivienda</label>
 
         <div className="container-fluid form-control pb-5" id="vivienda">
@@ -273,7 +286,7 @@ const Form = ({ onSubmit }) => {
       </button>
     </form>
   );
-}
+};
 
 Form.propTypes = {
   onSubmit: PropTypes.func.isRequired,
