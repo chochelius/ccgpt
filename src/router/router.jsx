@@ -3,7 +3,8 @@ import Navbar from "../components/navBar/Navbar";
 import Form from "../pages/Form/Form";
 import Page2 from "../pages/Page2/Page2";
 import Chat from "../pages/Chat/Chat";
-import Footer from "../components/footer/Footer";
+import Footer from "../components/Footer/Footer"
+import Data from "../pages/Data/Data";
 
 
 const RouterComponent = () => {
@@ -14,8 +15,9 @@ const RouterComponent = () => {
         <Router>
             <Navbar />
             <Routes>
-                <Route path="/form" element={<Page2 />} />
-                <Route path="/" element={<Form />} />
+                <Route path="/Page2" element={<Page2 />} />
+                <Route path="/Form" element={<Form />} />
+                <Route path="/" element={<Data />} />
                 <Route path="/chat" element={<Chat />} />
             </Routes>
             <Footer />
