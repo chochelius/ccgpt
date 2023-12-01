@@ -1,7 +1,7 @@
 const Navbar = () => {
   return (
-    <div className="position-fixed fixed-top ">
-      <nav className="navbar navbar-expand-lg bg-body-tertiary">
+    <div className=" ">
+      <nav className="navbar navbar-expand-lg bg-body-tertiary fixed-top z-3">
         <div className="container-fluid">
           <a className="navbar-brand text-success" href="#">
             ClimateCoachGPT

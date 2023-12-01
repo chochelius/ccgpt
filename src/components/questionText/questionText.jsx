@@ -1,8 +1,6 @@
-//create the question component to be reused in the form it should have a prop for the question and a text field for the answer
+import PropTypes from "prop-types";
 
-const QuestionText = ({ id, label, placeholder, value, type }) => {
-  //props = {id, label, placeholder, value} use them to create the question dynamically
-
+const QuestionText = ({ id, label, placeholder, value, type, onChange }) => {
   return (
     <div>
       <label
@@ -14,15 +12,22 @@ const QuestionText = ({ id, label, placeholder, value, type }) => {
       <input
         type={type}
         className="form-control d-block ms-3 w-75"
-                id={id}
+        id={id}
         placeholder={placeholder}
         value={value}
-        onChange={(event) => {
-          console.log(event.target.value);
-        }}
+        onChange={onChange}
       />
     </div>
   );
+};
+
+QuestionText.propTypes = {
+  id: PropTypes.string.isRequired,
+  label: PropTypes.string.isRequired,
+  placeholder: PropTypes.string,
+  value: PropTypes.string.isRequired,
+  type: PropTypes.string.isRequired,
+  onChange: PropTypes.func.isRequired,
 };
 
 export default QuestionText;

@@ -1,30 +1,23 @@
+//create app component that will be inserted in the main.jsx file
+// use react router to navigate between pages
+
+// Path: src/App.jsx
+
 import "./App.css";
-import Navbar from "./components/navBar/Navbar";
-import Form from "./pages/Form/Form";
-import Splash from "./pages/Splash/Splash";
-import Chat from "./pages/Chat/Chat";
-import Footer from "./components/Footer/Footer"
+import RouterComponent from "./router/router";
 
 function App() {
-  const test = () => {
-    console.log("test");
-  };
-
-  test();
-
   return (
-    <div>
-      <div className="mt-3">
-      <Navbar />
-        <Chat />
-        <Footer />
-      </div>
-      <div className="d-none">
-        <Form />
-        <Splash />
-      </div>
+    <div className="App">
+      <RouterComponent />
     </div>
   );
 }
 
+
 export default App;
+
+
+
+
+
