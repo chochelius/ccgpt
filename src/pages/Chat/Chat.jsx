@@ -118,9 +118,14 @@ const Chat = () => {
             className="chat-messages bg-secondary-subtle"
             style={{ height: "350px", border: "1px solid black" }}
           >
-            <div className="chat-message container sticky-bottom" style={{ height: "100%" }}>
-              <p className="align-bottom sticky-bottom">{botHistory}</p>
-              <p className="align-bottom sticky-bottom">{botResponse}</p>
+            <div
+              className="chat-message container sticky-bottom"
+              style={{ height: "100%" }}
+            >
+              <p className="sticky-bottom position-sticky">{botHistory}</p>
+              <p className="sticky-bottom position-sticky px-auto">
+                {botResponse}
+              </p>
             </div>
           </div>
         </div>
@@ -133,7 +138,10 @@ const Chat = () => {
               value={userInput}
               onChange={handleUserInput}
             />
-            <button className="btn btn-primary" onClick={() => matchReply(userInput)}>
+            <button
+              className="btn btn-primary"
+              onClick={() => matchReply(userInput)}
+            >
               Send
             </button>
           </form>
