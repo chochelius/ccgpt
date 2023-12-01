@@ -134,7 +134,7 @@ const Data = () => {
             }]
         }        
         return (
-            <div>
+            <div className="my-5 pb-5">
                 <h1>Graphs</h1>
                 <CanvasJSChart options={options} />
                 <CanvasJSChart options={options2} />
