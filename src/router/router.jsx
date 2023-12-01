@@ -16,8 +16,8 @@ const RouterComponent = () => {
             <Navbar />
             <Routes>
                 <Route path="/Page2" element={<Page2 />} />
-                <Route path="/Form" element={<Form />} />
-                <Route path="/" element={<Data />} />
+                <Route path="/" element={<Form />} />
+                <Route path="/data" element={<Data />} />
                 <Route path="/chat" element={<Chat />} />
             </Routes>
             <Footer />
